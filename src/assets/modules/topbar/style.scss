@@ -1,0 +1,24 @@
+.topbar{
+    @extend %container;
+    background-color: var(--colorPrincipal);
+    color: var(--colorTertiaire);
+    font-size: em(11);
+    padding-top: space(.5);
+    padding-bottom: space(.5);
+    svg{
+        height: 15px;
+        width: 15px;
+    }
+    @include down(460){
+        display: none;
+    }
+}
+
+.topbar-wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    div+div{
+        padding-left: space(3);
+    }
+}

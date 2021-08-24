@@ -1,0 +1,17 @@
+%formInput{
+    outline: none;
+    border: none;
+}
+
+.section-form{
+    @extend %container;
+    background-color: var(--colorBackgroungForm);
+    margin-top: space(10);
+    padding-top: space(12);
+    padding-bottom: space(12);
+    .form-group:last-child{
+        margin-top: 10px !important;
+        margin-bottom: 20px;
+    }
+    
+}

@@ -1,0 +1,68 @@
+.form-home{
+    background-color: var(--colorTertiaire);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: space(.5);
+    padding-top: space(8);
+    padding-left: space(4);
+    padding-right: space(4);
+    div+div{
+        margin-left: space(4);
+    }
+    
+    @include down(1000){
+        div+div{
+            margin-left: space(2);
+        }
+    }
+}
+
+.form-picture{
+    img{
+        height: 100%;
+    }
+    @include down(980){
+        margin-bottom: space(6);
+    }
+}
+
+.form-title{
+    @extend %title;
+}
+
+.form-group{
+    margin-top: space(4);
+}
+
+.form-controle{
+    padding-right: space(1);
+}
+
+.form-input,
+.form-textarea{
+    @extend %formInput;
+    border-bottom: 1px solid var(--colorPrincipal);
+    background-color: var(--colorTertiaire);
+}
+
+.form-input{
+    width: 40%;
+}
+
+.form-textarea{
+    width: 100%;
+}
+
+.btn-form-home{
+    @extend %btn;
+    background-color: var(--colorActive);
+    color: var(--colorTertiaire);
+    opacity: .8;
+    transition: opacity .5s;
+}
+
+.btn-form-home:hover{
+    opacity: 1;
+}

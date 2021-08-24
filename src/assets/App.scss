@@ -1,0 +1,120 @@
+// Variables
+// ==================
+:root {
+
+  --colorPrincipal:#1c090c;
+    --colorSeconde: #f7b6bc;
+    --colorActive: #ef233c;
+    --colorBackground: #dfcccd;
+    --colorTertiaire: #edf2f4;
+    --colorBackgroungForm:#2b2d42;
+    --colorLoginUser: #8d99ae;
+
+    --color-dark: #000;
+    --color: #121c42;
+    --color-admin:#2261e7;
+    --color-light: #121c4299;
+    --color-inversed: #effbec;
+    --color-inversed60: #effbec99;
+    --color-transparent: #{rgba(#121c42, 0)};
+    --contrast: #4869ee;
+    --contrast25: #4869ee3f;
+    --gap: 20px;
+    --space: 8px;
+    --border: #a39b9b;
+    --border-light: #e6eff4;
+    --background: #f7fafb;
+    --background-admin: #d2d8e4;
+    --background-item: #eaedf2;
+    --background-light: #fff;
+    --shadow: #d8e1e8;
+    --list-hover: var(--background);
+    --play: #f3f9fb; // Couleur de fond du bouton play
+    --space-section: 150px;
+    --card-footer: #f7fafd;
+    --card-padding: 16px;
+    --header-height: 137px;
+    --red: #f25353;
+    --green: #41cf7c;
+    --yellow: #feb32b;
+    --yellow-alpha: #feb32b4c;
+    --skeleton: var(--border-light);
+    --skeleton-wave: var(--border-light);
+    --selection-background: var(--border);
+    --header-background: #FFFFFFF2;
+    --header-background-inversed: #4869eeF2;
+    --during: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+// Outils
+// ==================
+
+@import './tools/reset.scss';
+@import './tools/mixins.scss';
+@import './tools/typography.scss';
+@import './tools/functions.scss';
+@import './tools/layout.scss';
+
+
+// Generic
+// ==================
+body {
+    font-family: $font;
+    font-size: 16px;
+    color: var(--color);
+    line-height: 1.6;
+    background: var(--background);
+    scroll-margin: 100px 0 0 0;
+    word-break: break-word;
+    z-index:1;
+}
+  
+body.light {
+    background: var(--background-light);
+    &::after {
+      display: none;
+   }
+}
+  
+body.header-light::after {
+    display: none;
+}
+
+
+body::after {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 580px;
+    height: 506px;
+    z-index: -1;
+    pointer-events: none;
+    // background: url(/images/logo-overlay.svg) top left / 100% 100% no-repeat;
+  
+    @include up(700) {
+      display: block;
+    }
+}
+  
+  
+// Force les custom element à être en block
+// =============
+con-fetti {
+    display: block;
+}
+
+@import './modules/topbar/style.scss';
+@import './modules/header/style.scss';
+@import './modules/navbar/style.scss';
+@import './modules/footer/style.scss';
+@import './modules/banners/homeBanner.scss';
+@import './modules/navbar/style.scss';
+@import './modules/skill/style.scss';
+@import './modules/progressbar/progress.scss';
+@import './modules/cart/style.scss';
+@import './modules/selectionProject/style.scss';
+@import './modules/sectionForm/style.scss';
+@import './modules/contactForm/style.scss';
+@import './modules/contactPerson/style.scss';

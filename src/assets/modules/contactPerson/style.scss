@@ -1,0 +1,44 @@
+.contact-me{
+    @extend %container;
+    margin-bottom: space(4);
+}
+
+.contact_person{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cp-item{
+    width: 250px;
+    margin-top: space(2);
+    padding-left: space(1);
+    padding-right: space(1);
+    padding-top: space(1);
+    padding-bottom: space(1);
+    @include down(280){
+        width: 100%;
+    }
+}
+
+.cp-item-head{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    color: var(--colorActive);
+    div+div{
+        margin-left: space(1);
+    }
+}
+
+.cp-item-headnice{
+    color: var(--colorPrincipal);
+}
+
+.cp-item-body{
+    color: #464646;
+}
+
+.contact_map{
+    overflow: hidden;
+}

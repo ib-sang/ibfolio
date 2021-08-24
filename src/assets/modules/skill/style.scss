@@ -1,0 +1,97 @@
+.skill{
+    @extend %container;
+    background-color: var(--colorPrincipal);
+    color: var(--colorTertiaire);
+    padding-top: space(4);
+    padding-bottom: space(4);
+    display: grid;
+    grid-gap: space(4);
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: space(20);
+    @include down(340){
+        .skill-level{
+            display: none;
+        }
+    }
+
+}
+
+.skill-title{
+    font-weight: 900;
+    font-size: em(64);
+}
+
+.skill-title,
+.skill-level-title{
+    @extend %title;
+    margin-bottom: space(4);
+}
+
+.skill-para{
+    margin-bottom: space(2);
+    font-weight: 200;
+    font-size: em(18);
+}
+
+.skill-des{
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.skill-mov{
+    border-radius: space(.5);
+    height: 340px;
+}
+
+.skill-mov{
+    background-color: var(--colorActive);
+    transform: translateY(space(18));
+    padding-left: space(4);
+    padding-right: space(4);
+    display: flex;
+    align-items:center;
+    
+}
+
+
+
+.skill-wrap{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+@media(max-width:860px){
+    .skill{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;        
+        overflow: hidden;
+    }
+
+    .skill-level{
+        margin-top: space(4);
+    }
+    
+    .skill-wrap{
+        padding-top: space(3);
+        padding-bottom: space(4);
+        position: sticky;
+    }
+
+    .skill-mov{
+        padding-top: space(2);
+        transform: translateY(space(0));
+        display: block;
+        
+    }
+
+    .skill-title{
+        font-weight: 400;
+        font-size: em(32);
+    }
+
+}
