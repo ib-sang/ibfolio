@@ -31,7 +31,6 @@ const Navbar = () => {
                     <nav className="nav-collapse">
                         <ul className="navbar-items">
                             <li className="navbar-item"><Link to="/" className={pathname ==='/' ? 'active': ''}>Home</Link></li>
-                            <li className="navbar-item"><Link to="/myservices" className={isSubPath('myservice') ? 'active' : ''}>Services</Link></li>
                             <li className="navbar-item"><Link to="/contactme" className={isSubPath('contactme') ? 'active' : ''}>Contact me</Link></li>
                             <li className="navbar-item"><Link to="/aboutme" className={isSubPath('aboutme') ? 'active' : ''}>About me</Link></li>
                         </ul>

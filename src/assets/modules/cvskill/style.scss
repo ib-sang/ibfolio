@@ -1,0 +1,134 @@
+.CVSkill{
+    padding-left: 280px;
+    padding-right: 280px;
+    padding-top: space(6);
+    padding-bottom: space(6);
+    background-color: #fff;
+    .progress{
+        background-color:var(--colorBackground);
+        width: 120%;
+    }
+
+    .progress-bar{
+        background-color: #ef233c;
+        background-image: linear-gradient(to bottom, #ef233c, #ef233c);
+    }
+
+    .progress-number{
+        transform: translateX(300%);
+        background-color: var(--colorActive);
+        color: #fff;
+    }
+
+    .progress-number::after{
+        border-color: var(--colorActive) transparent transparent transparent;
+    }
+    
+
+    @include down(1130){
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    @include down(720){
+        padding-left: 20px;
+        padding-right: 20px;
+        .progress-bar,
+        .progress,
+        .progress-number::after{
+            display: none;
+        }
+
+        .skill-items,
+        .skill-middle{
+            width: 100%;
+        }
+    }
+
+    @include down(400){
+        .skill-item{
+            display: none;
+        }
+        
+    }
+
+    .skill-items,
+    .skill-middle{
+        margin-bottom: space(1);
+    }
+
+    .skill-item{
+        color: #ef233c;
+    }
+
+    
+}
+
+.skill-items,
+.skill-middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include down(700){
+        justify-content: flex-start;
+    }
+}
+
+.skill-items{
+    width: 40%;
+    margin: auto;
+    transform: translateX(45%);
+    @include down(700){
+        transform: translateX(0);
+        width: 80%;
+        margin: 0;
+    }
+
+    @include down(400){
+        width: 85%;
+    }
+}
+
+.skill-item svg{
+    width: 30px;
+    height: 30px;
+}
+
+.si-icon{
+    width: calc(100% - 60px);
+    margin-left: space(2);
+}
+
+.skill-middle{
+    width: 40%;
+    margin: auto;
+    transform: translateX(-68%);   
+    .si-icon{
+        width: calc(100% - 30px);
+        margin-left: 0;
+    }
+    .skill-item{
+        transform: translateX(75px);
+    }
+
+    @include down(700){
+        flex-direction: row-reverse;
+        width: 88%;
+        margin: 0;
+        transform: translateX(0%);
+        .skill-item{
+            transform: translateX(0px);
+        }
+        .si-icon{
+            margin-left: space(2);
+        }
+    }
+
+    @include down(400){
+        .si-icon{
+            margin-left: space(0);
+        }
+        transform: translateX(-15px);
+    }
+}

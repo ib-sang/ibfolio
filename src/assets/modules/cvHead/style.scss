@@ -1,0 +1,48 @@
+.cv_head{
+    margin-bottom: space(2);
+}
+
+.cvh-title{
+    text-align: center;
+    font-size: em(24);
+    font-weight: 700;
+    margin-bottom: space(1.5);
+    @include down(380){
+        font-size: em(18);
+        font-weight: 600;  
+        margin-bottom: space(1); 
+    }
+}
+
+.cvh-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include down(280){
+        display: none; 
+
+    }
+}
+
+.cvh-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: space(1);
+    padding-right: space(1);
+    padding-top: space(1);
+    padding-bottom: space(1);
+    background-color: var(--colorLoginUser);
+    border-radius: 50%;
+    z-index: 21;
+    color: #fff;
+}
+
+.cvh-bar{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    z-index: 20;
+    background-color: var(--colorLoginUser);
+}

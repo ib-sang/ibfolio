@@ -122,6 +122,7 @@
 // Container
 // ==============
 $padding:40px;
+
 %container,
 .container{
     @include container(1260px, $padding);

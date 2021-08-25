@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { Fragment } from 'react';
+import { Helmet } from 'react-helmet'
+
+// component
+
+import CVSection from '../components/CVSection';
 
 const AboutPage = () => {
     return (
-        <div>
-            AboutPage
-        </div>
+        <Fragment>
+            <Helmet>
+                <title>IB.Folio | About for me </title>
+            </Helmet>
+            <CVSection/>
+        </Fragment>
+        
     )
 }
 
