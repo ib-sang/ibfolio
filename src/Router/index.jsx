@@ -16,7 +16,6 @@ import AboutPage from '../pages/AboutPage';
 const Router = () => {
 
     return (
-        <div>
             <Switch>
 
                 <Route exact path="/" render = {() =>(
@@ -48,7 +47,6 @@ const Router = () => {
                 />
 
             </Switch>
-        </div>
     )
 }
 

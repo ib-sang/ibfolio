@@ -4,8 +4,7 @@ import Router from './Router';
 
 const App = () => {
     return (
-        <Fragment>
-            
+        <Fragment>     
             <Router/>
         </Fragment>
         
