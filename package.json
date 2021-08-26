@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "react js ibfolio",
   "main": "index.js",
-  "homepage": "https://ib-sang/.github.io/ibfolio",
+  "homepage": "https://ib-sang.github.io/ibfolio",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "react-scripts start",
