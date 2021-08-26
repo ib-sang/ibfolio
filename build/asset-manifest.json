@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ibfolio/static/css/main.7a8281ed.chunk.css",
+    "main.js": "/ibfolio/static/js/main.a963c84a.chunk.js",
+    "main.js.map": "/ibfolio/static/js/main.a963c84a.chunk.js.map",
+    "runtime-main.js": "/ibfolio/static/js/runtime-main.10541259.js",
+    "runtime-main.js.map": "/ibfolio/static/js/runtime-main.10541259.js.map",
+    "static/css/2.68b64559.chunk.css": "/ibfolio/static/css/2.68b64559.chunk.css",
+    "static/js/2.44f89497.chunk.js": "/ibfolio/static/js/2.44f89497.chunk.js",
+    "static/js/2.44f89497.chunk.js.map": "/ibfolio/static/js/2.44f89497.chunk.js.map",
+    "index.html": "/ibfolio/index.html",
+    "static/css/2.68b64559.chunk.css.map": "/ibfolio/static/css/2.68b64559.chunk.css.map",
+    "static/css/main.7a8281ed.chunk.css.map": "/ibfolio/static/css/main.7a8281ed.chunk.css.map",
+    "static/js/2.44f89497.chunk.js.LICENSE.txt": "/ibfolio/static/js/2.44f89497.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.10541259.js",
+    "static/css/2.68b64559.chunk.css",
+    "static/js/2.44f89497.chunk.js",
+    "static/css/main.7a8281ed.chunk.css",
+    "static/js/main.a963c84a.chunk.js"
+  ]
+}
