@@ -39,15 +39,29 @@
             display: none;
         }
 
+        .progress-infos{
+            width: 100%;
+        }
+
         .skill-items,
         .skill-middle{
             width: 100%;
         }
+        .si-icon{
+            margin-left: 15px;
+            transform: translateY(8px);
+        }
+
     }
 
     @include down(400){
         .skill-item{
             display: none;
+        }
+
+        .si-icon{
+            margin-left: 0px;
+            transform: translateY(8px);
         }
         
     }
@@ -70,7 +84,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @include down(700){
+    @include down(720){
         justify-content: flex-start;
     }
 }
@@ -79,7 +93,7 @@
     width: 40%;
     margin: auto;
     transform: translateX(45%);
-    @include down(700){
+    @include down(720){
         transform: translateX(0);
         width: 80%;
         margin: 0;
@@ -112,7 +126,7 @@
         transform: translateX(75px);
     }
 
-    @include down(700){
+    @include down(720){
         flex-direction: row-reverse;
         width: 88%;
         margin: 0;
@@ -120,14 +134,18 @@
         .skill-item{
             transform: translateX(0px);
         }
+
         .si-icon{
-            margin-left: space(2);
+            margin-left: 15px;
+            transform: translateY(5px);
         }
     }
 
     @include down(400){
         .si-icon{
             margin-left: space(0);
+            transform: translateX(-15px);
+           
         }
         transform: translateX(-15px);
     }

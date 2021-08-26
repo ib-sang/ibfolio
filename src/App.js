@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Router from './Router';
 
 
 const App = () => {
     return (
-        <Router/>
+        <Fragment>
+            
+            <Router/>
+        </Fragment>
+        
     )
 }
 

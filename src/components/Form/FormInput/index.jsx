@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const FormInput = ({onChange, label, children, ...otherProps}) => {
     return (
         <div className="form-group">
@@ -10,7 +9,7 @@ const FormInput = ({onChange, label, children, ...otherProps}) => {
 
             <div className='form-field-style'>
                 {children && (children)}
-                <input id= { label } onChange= { onChange } {...otherProps} className='form-field'/>
+                <input id= { label } onChange= { onChange } {...otherProps} className='form-input'/>
             </div>
         </div>
     )
