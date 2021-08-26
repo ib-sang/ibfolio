@@ -63,7 +63,7 @@ const ContactForm = () => {
     }
 
     const notify = (message, option, type) => {
-        if (type =="success") {
+        if (type === "success") {
             return toast.success(message, option);
         }
         return toast.error(message, option);
@@ -93,7 +93,7 @@ const ContactForm = () => {
                         <label htmlFor="description">I want to tell you that: </label>
                     </div>
                     <div className="form-group">
-                        <textarea id="" onChange={ handleChange } name='message' cols="30" rows="10" id="description" className="form-textarea"></textarea>
+                        <textarea onChange={ handleChange } name='message' cols="30" rows="10" id="description" className="form-textarea"></textarea>
                     </div>
                     <div className="form-group">
                         <button className="btn-form-home btn">Knock up my inbox</button>

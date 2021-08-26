@@ -46,7 +46,7 @@ const SelectionProject = () => {
     let i= 0;
 
     const AllCart = projects.map(cart =>{
-        if(i%2 == 0){
+        if(i%2 === 0){
             i++
             return (
                 <div className="cart-left" key={cart.id}>
