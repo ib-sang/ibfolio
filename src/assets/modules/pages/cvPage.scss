@@ -1,0 +1,32 @@
+.cv_wraps{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cv_wraps_scroll{
+    width: 300px;
+    height: 380px;
+    overflow: scroll;
+    margin-bottom: space(2);
+    @include down(800){
+        width: 200px;
+        height: 180px;   
+    }
+}
+.cv_wraps_item{    
+    margin: space(2);
+}
+
+.cv_wraps_link{
+    color: var(--colorActive);
+    opacity: 0.8;
+    transition: var(--during);
+}
+
+.cv_wraps_link:hover{
+    opacity: 1;
+}
+

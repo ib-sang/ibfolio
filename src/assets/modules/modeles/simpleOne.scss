@@ -1,0 +1,89 @@
+.cv_one{
+    border: thick double  rgb(8, 8, 8);
+    border-style: dashed groove dotted;
+    background: #fff;
+    color: #000;
+    padding: space(6);
+    width: 2480px;
+    // height: 3508px;
+    max-width: 2790px;
+    font-size: em(16);
+    line-height: 1.8;
+    .title{
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: space(2);
+    }
+}
+
+.cv_about,
+.cv_skill,
+.cv_work,
+.cv_competence{
+    border-bottom: 3px solid #0008;
+    padding-bottom: space(2);
+    margin-bottom: space(3);
+}
+
+.title_name{
+    font-size: em(18);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cv_about_items{
+    margin-bottom: space(1);
+    
+}
+
+.cv_about_item{
+    text-decoration: underline;
+    padding-right: space(.5);
+    font-weight: 400;
+}
+
+.cv_about_title{
+    font-size: em(18);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.cv_skill_title{
+    font-size: em(16);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.cv_skill_item{
+    padding: space(1) 0;
+}
+.cv_skill_date{
+    font-weight: 600;
+}
+
+.cv_skill_job{
+    display: flex;
+    flex-direction: row;
+
+}
+.cv_media{
+    width: 20px;
+    height: 20px;
+}
+
+.cv_lists{
+    margin-left: space(2);
+}
+
+.cv_list{
+    margin-left: space(1);
+}
+
+.cv_skill_list_t,
+.cv_skill_diplome{
+    font-weight: 600;
+}
+
+.cv_img{
+    // width: 100%;
+}

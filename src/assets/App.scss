@@ -9,7 +9,7 @@
     --colorTertiaire: #edf2f4;
     --colorBackgroungForm:#2b2d42;
     --colorLoginUser: #8d99ae;
-
+  --c:rgb(235, 225, 77);
     --color-dark: #000;
     --color: #121c42;
     --color-admin:#2261e7;
@@ -67,6 +67,7 @@ body {
     scroll-margin: 100px 0 0 0;
     word-break: break-word;
     z-index:1;
+
 }
   
 body.light {
@@ -122,3 +123,7 @@ con-fetti {
 @import './modules/sectionMan/style.scss';
 @import './modules/cvskill/style.scss';
 @import './modules/cvwork/style.scss';
+@import "./modules//modeles/simpleOne.scss";
+@import "./modules/pages/cvPage.scss";
+@import "./modules/pages/createCV.scss";
+@import "./modules/forms.scss";

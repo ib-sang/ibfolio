@@ -33,6 +33,7 @@ const Navbar = () => {
                             <li className="navbar-item"><Link to="/" className={pathname ==='/' ? 'active': ''}>Home</Link></li>
                             <li className="navbar-item"><Link to="/contactme" className={isSubPath('contactme') ? 'active' : ''}>Contact me</Link></li>
                             <li className="navbar-item"><Link to="/aboutme" className={isSubPath('aboutme') ? 'active' : ''}>About me</Link></li>
+                            <li className="navbar-item"><Link to="/cv" className={isSubPath('cv') ? 'active' : ''}>Create your cv</Link></li>
                         </ul>
                     </nav>
                 </div>

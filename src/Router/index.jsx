@@ -1,21 +1,27 @@
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
+
+// constants
+import {
+    USERS_CV_MODELE
+} from "./../settings/constant";
 
 // layout
-
 import MainLayout from '../layouts/MainLayout';
 import HomeLayout from '../layouts/HomeLayout';
 
 // pages
-
 import HomePage from '../pages/HomePage';
 import ServicePage from '../pages/ServicePage';
 import ContactPage from '../pages/ContactPage';
 import AboutPage from '../pages/AboutPage';
+import  Cvpage  from '../pages/Curriculum/Cvpage';
+import CreateCVPage from '../pages/Curriculum/CreateCVPage';
 
 const Router = () => {
 
     return (
+        <BrowserRouter>
             <Switch>
 
                 <Route exact path="/" render = {() =>(
@@ -46,7 +52,23 @@ const Router = () => {
                 )}  
                 />
 
+                <Route exact path="/cv" render ={() =>(
+                    <MainLayout>
+                        <Cvpage/>
+                    </MainLayout>
+                )}  
+                />
+
+                <Route exact path={USERS_CV_MODELE} render ={() =>(
+                    <MainLayout>
+                        <CreateCVPage/>
+                    </MainLayout>
+                )}  
+                />
+
             </Switch>
+        </BrowserRouter>
+            
     )
 }
 

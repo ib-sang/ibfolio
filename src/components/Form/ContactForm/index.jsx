@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,11 +9,13 @@ const ContactForm = () => {
         email: '',
         message: '',
         subject: '',
+        error: null
     })
 
     const SERVICE_ID = 'service_cl2lufu'
     const TEMPLATE_ID = 'template_z0whr7c'
     const USER_ID = 'user_L0twZvYZdxAjJ9nwSs7OQ'
+
 
     const handleChange = (e) =>{
         e.preventDefault();
@@ -22,6 +24,11 @@ const ContactForm = () => {
 
     const handleSubmit = e =>{
         e.preventDefault();
+        if (toSend.email === '' || toSend.message === '' || toSend.name === '' || toSend.subject==='') {
+            setToSend({ ...toSend, error: 'Un des champs est vide' });
+            console.log(toSend.error);
+            return false        
+        }
         send(
             SERVICE_ID,
             TEMPLATE_ID,
@@ -77,6 +84,7 @@ const ContactForm = () => {
                 </div>
                 <div className="form-contact">
                     <h1 className="form-title">Say hi by filling the form out below.</h1>
+                    <span className="error">{toSend.error ?? (toSend.error)}</span>
                     <div className="form-group">
                         <label htmlFor="name" className="form-controle">My name is</label>
                         <input type="text" className="form-input" name='name' onChange={ handleChange } id="name"/>
@@ -96,7 +104,7 @@ const ContactForm = () => {
                         <textarea onChange={ handleChange } name='message' cols="30" rows="10" id="description" className="form-textarea"></textarea>
                     </div>
                     <div className="form-group">
-                        <button className="btn-form-home btn">Knock up my inbox</button>
+                        <button className="btn-form-home btn">Knock up my inbox</button>                        
                     </div>
                 </div>
                 

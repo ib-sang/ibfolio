@@ -1,0 +1,8 @@
+.create_cv_body{
+    display: grid;
+    grid-gap: space(2);
+    grid-template-columns: 380px 1fr;
+    @include down(800){
+        grid-template-columns: 1fr;
+    }
+}

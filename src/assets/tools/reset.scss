@@ -99,6 +99,17 @@ button {
   background: transparent;
   font-size: inherit;
 }
+button:disabled,
+button[disabled],
+button:disabled:hover,
+button[disabled]:hover {
+  border: 1px solid #363636;
+  background-color:#363636;
+  color: #e7e7e7;
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
 form {
   display: block;
 }
